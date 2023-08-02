@@ -1,8 +1,10 @@
+
 package week1;
 
 import java.util.Scanner;
 
-public class b1000 {
+public class b1008 {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -10,5 +12,9 @@ public class b1000 {
 		int b = sc.nextInt();
 		
 		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a / b);
+		System.out.println(a % b);
 	}
 }

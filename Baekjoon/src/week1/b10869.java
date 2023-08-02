@@ -2,7 +2,7 @@ package week1;
 
 import java.util.Scanner;
 
-public class b1000 {
+public class b10869 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
