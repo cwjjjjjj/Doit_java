@@ -11,4 +11,8 @@ class Max3method {
 		}
 		return max;
 	}
+	
+	public static void main(String[] args) {
+		System.out.println("max3(3,2,1)= " +max3(3,2,1));
+	}
 }
