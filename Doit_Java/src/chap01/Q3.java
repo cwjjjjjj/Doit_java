@@ -1,6 +1,6 @@
 package chap01;
 
-public class q3 {
+public class Q3 {
 	static int max4(int a, int b, int c, int d) {
 		int min = a;
 		if(b < min) {

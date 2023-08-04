@@ -1,6 +1,6 @@
 package chap01;
 
-public class q4 {
+public class Q4 {
 	static int med3(int a, int b, int c) {
 		if (a >= b) {
 			if (b >= c) {
