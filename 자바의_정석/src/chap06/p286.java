@@ -9,10 +9,12 @@ public class p286 {
 		System.out.println("mm.add(3L, 3L) 결과:" + mm.add(3L, 3L));
 		
 		int[] a = {100, 200, 300};
-		System.out.println("mm.add(a) 결과:" + mm.add(a));
-		
+		System.out.println("mm.add(a) 결과:" + mm.add(a));	
 	}
 }
+
+//add 메서드가 println 메서드보다 먼저 출력되는 이유
+//println 메서드가 결과를 출력하려면 add 메서드의 결과가 먼저 계산되어야 하기 때문
 
 class MyMath3 {
 	int add(int a, int b) {
