@@ -6,7 +6,7 @@ public class b10950 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
-		for(int tc = 0; tc<=T; tc++) {
+		for(int tc = 1; tc <= T; tc++) {
 			int A= sc.nextInt();
 			int B= sc.nextInt();  
 
