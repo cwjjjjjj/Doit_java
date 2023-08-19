@@ -17,9 +17,5 @@ public class b10871 {
 				System.out.printf(arr[i] + " ");
 			}
 		}
-		
-		
-
 	}
-
 }
