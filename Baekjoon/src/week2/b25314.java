@@ -9,7 +9,7 @@ public class b25314 {
 		
 		int N = sc.nextInt();
 		int i = N/4;
-		System.out.println("long ".repeat(i) + "int");
+//		System.out.println("long ".repeat(i) + "int");
 		
 	}
 
