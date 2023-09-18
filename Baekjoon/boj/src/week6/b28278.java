@@ -10,33 +10,35 @@ public class b28278 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine()); //명령의 수
 		Stack<Integer> stack = new Stack<>();
+		StringBuilder sb = new StringBuilder();
 		
 		for(int i = 0; i < N; i++) {
 			String o = br.readLine(); 
 			if(o.equals("2")) {
 				if(!stack.isEmpty()) {
-					System.out.println(stack.pop());
+					sb.append(stack.pop()+"\n");
 				} else {
-					System.out.println(-1);
+					sb.append(-1+"\n");
 				}
 			} else if(o.equals("3")) {
-				System.out.println(stack.size());
+				sb.append(stack.size()+"\n");
 			} else if(o.equals("4")) {
 				if(stack.isEmpty()) {
-					System.out.println(1);
+					sb.append(1+"\n");
 				} else {
-					System.out.println(0);
+					sb.append(0+"\n");
 				}
 			} else if(o.equals("5")) {
 				if(!stack.isEmpty()) {
-					System.out.println(stack.peek());
+					sb.append(stack.peek()+"\n");
 				} else {
-					System.out.println(-1);
+					sb.append(-1+"\n");
 				}
 			} else {
 				String tmp[] = o.split(" ");
-				stack.push(Integer.parseInt(tmp[1]));
+				stack.add(Integer.parseInt(tmp[1]));
 			}
 		}
+		System.out.println(sb);
 	}
 }
