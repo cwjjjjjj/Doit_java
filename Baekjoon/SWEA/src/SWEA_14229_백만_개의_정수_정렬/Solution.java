@@ -6,9 +6,9 @@ import java.util.Scanner;
 	
 public class Solution {
 	public static void main(String[] args) throws FileNotFoundException {
-//	    File file = new File("src/SWEA_14229_백만_개의_정수_정렬/input.txt");
-//	    Scanner sc = new Scanner(file);
-	    Scanner sc = new Scanner(System.in);
+	    File file = new File("src/SWEA_14229_백만_개의_정수_정렬/input.txt");
+	    Scanner sc = new Scanner(file);
+//	    Scanner sc = new Scanner(System.in);
 	    int[] A = new int[1000000]; //100만개의 정수 주어짐
 	    for(int i = 0; i < 1000000; i++) {
 	        A[i] = sc.nextInt();

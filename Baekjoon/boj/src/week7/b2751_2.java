@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class b2751_2 {
+	
+	public static int sortedArr []; //매번 새로 만들지 말고 클래스변수로 선언하기
+	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
@@ -15,11 +18,13 @@ public class b2751_2 {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 		
+		sortedArr = new int[arr.length];
 		mergeSort(arr, 0, N-1);
 		for(int a : arr) {
 			sb.append(a).append("\n");
 		}
 		System.out.println(sb);
+		br.close();
 	}
 	
 	//분할 과정
@@ -37,7 +42,7 @@ public class b2751_2 {
 		int L = left;
 		int R = mid+1;
 		int idx = left;
-		int[] sortedArr = new int[arr.length];
+		//클래스변수로 선언된 배열에 크기만 지정해주는 선언법
 		
 		while(L <= mid && R <= right) {
 			if(arr[L]<=arr[R]) {
