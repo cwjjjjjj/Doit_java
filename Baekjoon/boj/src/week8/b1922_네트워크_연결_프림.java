@@ -1,8 +1,8 @@
-package SWEA_1251_하나로_프림;
+package week8;
 
 import java.util.Scanner;
 
-public class b1922 {
+public class b1922_네트워크_연결_프림 {
 	static final int INF = Integer.MAX_VALUE;
 	
 	public static void main(String[] args) {
@@ -11,14 +11,11 @@ public class b1922 {
 		int V = sc.nextInt();
 		int E = sc.nextInt();
 		
-		int[][] adjArr = new int[V+1][V+1];
-		System.out.println(V);
+		int[][] adjArr = new int[V][V];
 		for (int i = 0; i < E; i++) {
-			int A = sc.nextInt();
-			int B = sc.nextInt();
+			int A = sc.nextInt()-1; //인덱스 0번부터 쓸 건데 컴퓨터 번호 1부터 들어오니까 1씩 빼주기!
+			int B = sc.nextInt()-1;
 			int W = sc.nextInt();
-			System.out.print(A);
-			System.out.println(B);
 			
 			adjArr[A][B] = W;
 			adjArr[B][A] = W;
@@ -37,7 +34,7 @@ public class b1922 {
 		dist[0] = 0;
 		int ans = 0;
 		
-		for (int i = 0; i < V+1; i++) {
+		for (int i = 0; i < V; i++) {
 			int min = INF;
 			int idx = -1;
 			for (int j = 0; j < V; j++) {
