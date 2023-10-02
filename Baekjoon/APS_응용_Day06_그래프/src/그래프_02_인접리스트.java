@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class 그래프_02_인접리스트 {
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		
 		//정점의 개수(V)와 간선의 개수(E)가 주어진다
@@ -29,6 +28,5 @@ public class 그래프_02_인접리스트 {
 			adjList[A].add(B); //유향 그래프라면 아랫줄 필요없음
 			adjList[B].add(A); //무향 그래프라면 필수
 		}
-		
 	}
 }
