@@ -33,13 +33,10 @@ public class 동적계획법_03_배낭문제 {
 					dp[i][w] = Math.max(dp[i-1][w], dp[i-1][w-weights[i]] + cost[i]);
 				} else {
 					dp[i][w] = dp[i-1][w]; //현재 고려할 물건의 무게가 임시 무게를 벗어나 고려할 수 없을 때
-					
 				}
 			}
 		} //물건을 한개씩 고려하겠다
 		System.out.println(dp[N][W]);
 	}
-	
 	public static String input = "4 10\r\n" + "5 10\r\n" + "4 40\r\n" + "6 30\r\n" + "3 50\r\n" + "";
-
 }
